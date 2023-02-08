@@ -49,3 +49,4 @@
         },
     ]
 }
+console.log(state[0])
