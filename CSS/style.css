@@ -1,0 +1,9 @@
+.main-view {
+    height: 900px;
+    width: 500px;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color:black;
+    border-radius: 25px;
+}

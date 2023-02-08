@@ -1,52 +1,46 @@
-    let state = {
-    symbols: [["&", "@", "#", "$", "%", "^", "&", "*", "("]],
+let nextButton = document.getElementById("nextButton");
+nextButton.addEventListener("click", () => {
+ //Goes to next page of the app, this is connected to the GO button as well as it has the same class
+ setPage = () => {
+    this.setState({
+        pages: + 1,
+    })
+}
+})
+
+let state = {
+    symbols: [["&", "@", "#", "$", "%", "^", "-", "*", "("]],
     currentPage: 0,
     pages: [
         {
             headerText: "I can read your mind",
             paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: "GO",
         },
         {
-            headerText: "I can read your mind",
+            headerText: "Pick a number from 01 - 99",
             paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: "NEXT",
         },
         {
-            headerText: "I can read your mind",
+            headerText: "Add both digits together to get a new number",
             paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: "NEXT",
         },
         {
-            headerText: "I can read your mind",
+            headerText: "Subtract your new number from the original number",
             paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: "NEXT",
         },
         {
-            headerText: "I can read your mind",
+            headerText: "List numbers from symbols array",
             paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: "REVEAL",
         },
         {
-            headerText: "I can read your mind",
+            headerText: "Show the & symbol",
             paragraphText: "",
-            nextButtonText: "",
-        },
-        {
-            headerText: "I can read your mind",
-            paragraphText: "",
-            nextButtonText: "",
-        },
-        {
-            headerText: "I can read your mind",
-            paragraphText: "",
-            nextButtonText: "",
-        },
-        {
-            headerText: "I can read your mind",
-            paragraphText: "",
-            nextButtonText: "",
+            nextButtonText: document.write("<img src="""),
         },
     ]
 }
-console.log(state[0])
