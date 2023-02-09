@@ -2,26 +2,55 @@
     height: 900px;
     width: 500px;
     margin: auto;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color:black;
     border-radius: 25px;
 }
 
-.h1 {
+#headerText {
     font-size: 85px;
     margin-left: 12%;
 }
 
-#btn,  bi-arrow-repeat {
+/* #btnClick {
     /* margin: 0; */
     /* padding: 0; */
     /* border-radius: 50%; */
-    margin-left: 65%;
-    margin-top: 175%;
+    
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}*/
+
+
+
+.initialPosition {
+    margin-right: auto;
+    display: block;
+    margin-top: 600px !important;
+    margin-left: 350px !important;
+}
+
+.btn btn-secondary {
+    
 }
 
 #scrollEnd {
     height: 300px;
     overflow-y: scroll;
+}
+
+.nextPage {
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: 75%;
+}
+
+.resetButton {
+    display: block;
+    position: absolute;
+    left: 65%;
+    top: 81%;
 }
