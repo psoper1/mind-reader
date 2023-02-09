@@ -1,4 +1,5 @@
 let headerText = document.getElementById("headerText");
+let headerTextEnd = document.getElementById("headerTextEnd");
 let paragraphText = document.getElementById("paragraphText");
 let btnClick = document.getElementById("btnClick");
 let resetClick = document.getElementById("resetClick");
@@ -15,6 +16,7 @@ window.addEventListener('load', function () {
     scrollEnd.style.visibility = "hidden";
     scrollEnd.style.display = "none";
     btnClick.classList.add("initialPosition");
+    headerTextEnd.style.visibility = "hidden";
     x = 1;
 })
 
@@ -48,7 +50,7 @@ let state = {
             btnClick: "REVEAL",
         },
         {
-            headerText: "&",
+            headerTextEnd: "&",
             paragraphText: "Your symbol is:\n\n&",
             // nextButtonText:
         }
@@ -115,12 +117,12 @@ btnClick.addEventListener("click", () => {
     }
     if (x == 5) {
         let pages = state.pages[5];
-        headerText.innerText = pages.headerText;
+        headerTextEnd.innerText = pages.headerTextEnd;
         paragraphText.innerText = pages.paragraphText;
         btnClick.innerText = pages.btnClick;
         btnClick.style.visibility = "hidden";
         scrollEnd.style.visibility = "hidden";
-
+        headerTextEnd.style.visibility = "visible";
 
     }
 
@@ -137,6 +139,8 @@ btnClick.addEventListener("click", () => {
     scrollEnd.style.display = "none";
     btnClick.classList.add("initialPosition");
     btnClick.classList.remove("nextPage");
+    btnClick.style.visibility = "visible";
+    
     
     x = 1;
     }

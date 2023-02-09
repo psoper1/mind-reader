@@ -6,11 +6,19 @@
     border-style: solid;
     border-color:black;
     border-radius: 25px;
+    background-color: rgb(135, 150, 163);
+    font-style: italic;
 }
 
 #headerText {
     font-size: 85px;
     margin-left: 12%;
+}
+
+#headerTextEnd {
+    font-size: 182px;
+    margin-left: 35%;
+    margin-top: 18%;
 }
 
 /* #btnClick {
@@ -32,9 +40,6 @@
     margin-left: 350px !important;
 }
 
-.btn btn-secondary {
-    
-}
 
 #scrollEnd {
     height: 300px;
@@ -44,13 +49,21 @@
 .nextPage {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 48%;
     top: 75%;
 }
 
 .resetButton {
     display: block;
     position: absolute;
-    left: 65%;
+    left: 56%;
     top: 81%;
+}
+
+/* .container-fluid {
+    background-color: aqua;
+} */
+
+body {
+    background-color: rgb(10, 31, 31);
 }
