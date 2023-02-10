@@ -137,6 +137,9 @@ function reloadWindow() {
     btnClick.classList.remove("nextPage");
     btnClick.classList.add("initialPosition");
     btnClick.style.visibility = "visible";
+    scrollEnd.innerText = "";
+    scrollEnd.scroll(0,0);
+    
 
     x = 1;
 }
