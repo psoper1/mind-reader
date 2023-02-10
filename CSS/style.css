@@ -4,46 +4,41 @@
     margin: auto;
     border-width: 2px;
     border-style: solid;
-    border-color:black;
+    border-color: black;
     border-radius: 25px;
-    background-color: rgb(135, 150, 163);
-    font-style: italic;
+    background-color: rgb(173, 182, 190);
+
 }
 
 #headerText {
     font-size: 85px;
-    margin-left: 12%;
+    margin-left: auto;
+    text-align: center;
 }
 
-#headerTextEnd {
-    font-size: 182px;
-    margin-left: 35%;
-    margin-top: 18%;
+#paragraphText {
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+    font-size: x-large;
+    font-style: italic;
+    color: #295639;
 }
-
-/* #btnClick {
-    /* margin: 0; */
-    /* padding: 0; */
-    /* border-radius: 50%; */
-    
-    /* margin-left: auto;
-    margin-right: auto;
-    display: block; 
-}*/
-
-
 
 .initialPosition {
     margin-right: auto;
     display: block;
-    margin-top: 600px !important;
+    margin-top: 600px;
     margin-left: 350px !important;
 }
-
 
 #scrollEnd {
     height: 300px;
     overflow-y: scroll;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
 }
 
 .nextPage {
@@ -59,10 +54,6 @@
     left: 56%;
     top: 81%;
 }
-
-/* .container-fluid {
-    background-color: aqua;
-} */
 
 body {
     background-color: rgb(10, 31, 31);

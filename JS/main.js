@@ -1,5 +1,4 @@
 let headerText = document.getElementById("headerText");
-let headerTextEnd = document.getElementById("headerTextEnd");
 let paragraphText = document.getElementById("paragraphText");
 let btnClick = document.getElementById("btnClick");
 let resetClick = document.getElementById("resetClick");
@@ -16,7 +15,7 @@ window.addEventListener('load', function () {
     scrollEnd.style.visibility = "hidden";
     scrollEnd.style.display = "none";
     btnClick.classList.add("initialPosition");
-    headerTextEnd.style.visibility = "hidden";
+
     x = 1;
 })
 
@@ -50,14 +49,14 @@ let state = {
             btnClick: "REVEAL",
         },
         {
-            headerTextEnd: "&",
+            headerText: "&",
             paragraphText: "Your symbol is:\n\n&",
-            // nextButtonText:
+
         }
     ]
 }
 
-// var x = 1;
+
 
 btnClick.addEventListener("click", () => {
 
@@ -108,7 +107,6 @@ btnClick.addEventListener("click", () => {
 
 
         for (let i = 0; i < 99; i++) {
-            0
             y = i;
             potato = symbols[i % 9];
             concatString = y + " - " + potato + "\n";
@@ -117,38 +115,32 @@ btnClick.addEventListener("click", () => {
     }
     if (x == 5) {
         let pages = state.pages[5];
-        headerTextEnd.innerText = pages.headerTextEnd;
+        headerText.innerText = pages.headerText;
         paragraphText.innerText = pages.paragraphText;
         btnClick.innerText = pages.btnClick;
         btnClick.style.visibility = "hidden";
         scrollEnd.style.visibility = "hidden";
-        headerTextEnd.style.visibility = "visible";
 
     }
 
     x = x + 1;
 });
 
-    function reloadWindow(){
-        let pages = state.pages[0];
+function reloadWindow() {
+    let pages = state.pages[0];
     headerText.innerText = pages.headerText;
     paragraphText.innerText = pages.paragraphText;
     btnClick.innerText = pages.btnClick;
     resetClick.style.visibility = "hidden";
     scrollEnd.style.visibility = "hidden";
     scrollEnd.style.display = "none";
-    btnClick.classList.add("initialPosition");
     btnClick.classList.remove("nextPage");
+    btnClick.classList.add("initialPosition");
     btnClick.style.visibility = "visible";
-    
-    
+
     x = 1;
-    }
+}
 
-    resetClick.addEventListener("click", () => {
-        reloadWindow();
-    })
-
-// function refreshPage() {
-//     window.location.reload();
-// } 
+resetClick.addEventListener("click", () => {
+    reloadWindow();
+})
