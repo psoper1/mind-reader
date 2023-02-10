@@ -1,3 +1,5 @@
+//Setting variables
+
 let headerText = document.getElementById("headerText");
 let paragraphText = document.getElementById("paragraphText");
 let btnClick = document.getElementById("btnClick");
@@ -5,6 +7,8 @@ let resetClick = document.getElementById("resetClick");
 let scrollEnd = document.getElementById("scrollEnd");
 
 var x;
+
+//Event listener to run a function on page load to start at the first page
 
 window.addEventListener('load', function () {
     let pages = state.pages[0];
@@ -18,6 +22,8 @@ window.addEventListener('load', function () {
 
     x = 1;
 })
+
+//Setting state for the symbols and the an arry of objects containing each page that will be displayed
 
 let state = {
     symbols: ["&", "@", "#", "$", "%", "^", "-", "*", "("],
@@ -56,7 +62,8 @@ let state = {
     ]
 }
 
-
+//Event listener / if statements to cycle through each page depending on
+//what page you are on when you click the Next button
 
 btnClick.addEventListener("click", () => {
 
@@ -126,6 +133,9 @@ btnClick.addEventListener("click", () => {
     x = x + 1;
 });
 
+//Function to reset back to the first page when clicking Reset and fixing
+//fixing the scroll to go back to the top on reset, not just page load
+
 function reloadWindow() {
     let pages = state.pages[0];
     headerText.innerText = pages.headerText;
@@ -143,6 +153,8 @@ function reloadWindow() {
 
     x = 1;
 }
+
+//Event listener that runs the reloadWindow function when the reset button is clicked
 
 resetClick.addEventListener("click", () => {
     reloadWindow();
